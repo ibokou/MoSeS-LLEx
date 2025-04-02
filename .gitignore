@@ -1,0 +1,8 @@
+software/.idea
+software/twincrutches/impl/build/
+software/twininsoles/impl/build/
+software/central/mynewt-nimble
+software/central/example/mynewt-nimble
+software/central/build/*
+software/central/example/build/*
+*.o

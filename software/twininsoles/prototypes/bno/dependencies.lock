@@ -1,0 +1,15 @@
+dependencies:
+  BNO055ESP32:
+    component_hash: null
+    source:
+      path: /mnt/d/Projekte/Uni/HD_MScTi/WS22/BNO055ESP32
+      type: local
+    version: 1.2.1
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.0.2
+manifest_hash: cec236e0fc3b476a9cf4bb089520b8bf98f571ed2a7291d12b69ed94c09125bf
+target: esp32
+version: 1.0.0

@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.16)
+set(EXTRA_COMPONENT_DIRS "../../components" "../../esp-idf-lib/components")
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+
+add_compile_definitions(EXTERNAL_EVENT_NO_HEAP_DATA)
+
+if(TWIN_INSOLE_RIGHT)
+    add_compile_definitions(TWIN_INSOLE_RIGHT)
+elseif(TWIN_INSOLE_LEFT)
+    add_compile_definitions(TWIN_INSOLE_LEFT)
+endif()
+
+project(twininsoles)

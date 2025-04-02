@@ -1,0 +1,21 @@
+dependencies:
+  BNO055ESP32:
+    component_hash: null
+    source:
+      path: /mnt/d/Projekte/Uni/HD_MScTi/WS22/twinperipherals/BNO055ESP32
+      type: local
+    version: 1.2.1
+  StateMachine:
+    component_hash: null
+    source:
+      path: /mnt/d/Projekte/Uni/HD_MScTi/WS22/twinperipherals/StateMachine
+      type: local
+    version: 1.0.0
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.1.1
+manifest_hash: f42303294afc8ea243d72e8dd2b58191f4f2336b9dfe26e564a9d8414e1f430f
+target: esp32s3
+version: 1.0.0

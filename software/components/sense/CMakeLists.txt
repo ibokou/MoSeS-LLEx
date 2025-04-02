@@ -1,0 +1,9 @@
+idf_component_register(
+  SRC_DIRS
+  "."
+  INCLUDE_DIRS
+  "include"
+  REQUIRES
+  BNO055ESP32
+  error
+  esp_adc)

@@ -1,0 +1,3 @@
+dependencies:
+  BNO055ESP32:
+    path: ../../../../BNO055ESP32

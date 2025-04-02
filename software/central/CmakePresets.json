@@ -1,0 +1,54 @@
+
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 22,
+    "patch": 1
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "hidden": true,
+      "displayName": "Default Config",
+      "description": "Default build using Make",
+      "binaryDir": "${sourceDir}/build"
+    },
+    {
+      "name": "build-host",
+      "inherits": "default",
+      "vendor": {
+        "jetbrains.com/clion": {
+          "autoFormat": false,
+          "toolchain": "Docker-host"
+        }
+      }
+    },
+    {
+      "name": "build-armhf",
+      "inherits": "default",
+      "vendor": {
+        "jetbrains.com/clion": {
+          "autoFormat": false,
+          "toolchain": "Docker-armhf"
+        }
+      },
+      "toolchainFile": "${sourceDir}/cmake/toolchains/armhf.cmake"
+    },
+    {
+      "name": "build-arm64",
+      "inherits": "default",
+      "toolchainFile": "${sourceDir}/cmake/toolchains/arm64.cmake",
+      "vendor": {
+        "jetbrains.com/clion": {
+          "autoFormat": false,
+          "toolchain": "Docker-arm64"
+        }
+      }
+    }
+  ],
+  "vendor": {
+    "jetbrains.com/clion": {
+      "autoFormat": false
+    }
+  }
+}
