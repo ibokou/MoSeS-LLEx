@@ -1,0 +1,4 @@
+find_package(simpledbus REQUIRED)
+
+add_executable(BLRfcomm ./src/main.cpp)
+target_link_libraries(BLRfcomm simpledbus::simpledbus)

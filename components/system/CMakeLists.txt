@@ -1,0 +1,11 @@
+idf_component_register(
+  SRC_DIRS
+  "."
+  INCLUDE_DIRS
+  "include"
+  REQUIRES
+  btn
+  driver
+  error
+  esp_hw_support
+  led)

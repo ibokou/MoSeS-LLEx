@@ -1,0 +1,3 @@
+dependencies:
+  StateMachine:
+    path: ../../StateMachine

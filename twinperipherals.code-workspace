@@ -1,0 +1,62 @@
+{
+	"folders": [
+		{
+			"name": "central",
+			"path": "central"
+		},
+		{
+			"name": "twincrutches-impl",
+			"path": "twincrutches/impl"
+		},
+		{
+			"name": "twininsoles-impl",
+			"path": "twininsoles/impl"
+		},
+		{
+			"name": "shared-config",
+			"path": "shared-config"
+		},
+		{
+			"name": "components",
+			"path": "components"
+		},
+		{
+			"name": "StateMachine",
+			"path": "StateMachine"
+		},
+		{
+			"name": "BNO055ESP32",
+			"path": "BNO055ESP32"
+		},
+		{
+			"name": "esp-idf-lib",
+			"path": "esp-idf-lib"
+		},
+		{
+			"name": "calibrator",
+			"path": "experiment/calibrator"
+		},
+		{
+			"name": "blinkstickcpp",
+			"path": "blinkstickcpp-lib-0.2.1"
+		},
+		{
+			"path": "/home/ibo/projects/cpp/format"
+		}
+	],
+	"settings": {
+		"idf.adapterTargetName": "esp32",
+		"idf.flashType": "UART",
+		"idf.port": "/dev/ttyUSB0",
+		"C_Cpp.formatting": "clangFormat",
+		"C_Cpp.default.compilerPath": "/usr/bin/clang",
+		"C_Cpp.default.cppStandard": "c++17",
+		"C_Cpp.default.cStandard": "c11",
+		"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
+		"C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/**",
+			"${env:HOME}/esp/esp-idf/components/**"
+		]
+	}
+}

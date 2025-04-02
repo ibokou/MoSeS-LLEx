@@ -1,0 +1,38 @@
+@startuml
+hide empty description
+[*] --> StartUp
+StartUp : Fast Green LED blinking
+StartUp -> FailedWiring : wiringFailed
+StartUp --> IMUConfiguration : auto(wait 2s)
+
+IMUConfiguration : Slow Green LED Blinking
+IMUConfiguration --> Operational : successful
+IMUConfiguration --> FailedWiring : wiringFailed
+IMUConfiguration -> Sleep : LongPWRBTNPress
+
+Operational : Steady Green LED
+Operational --> BLEIdle : startBLEServer
+Operational --> Sleep : LongPWRBTNPress
+
+BLEIdle: Steady Blue LED
+BLEIdle --> BLEConnection : BLEConnect
+BLEIdle -> Sleep : LongPWRBTNPress
+
+BLEConnection --> SendData : auto
+
+SendData --> SendData
+SendData : Fast Blue LED Blinking
+SendData --> BLEIdle : BLEDisconnect
+SendData --> FailedWiring : wiringFailed
+SendData -> Sleep : LongPWRBTNPress
+
+
+FailedWiring : Button/IMU not correctly Wired
+FailedWiring : Red LED
+FailedWiring --> FailedWiring
+
+Sleep : equals end
+Sleep --> [*]
+
+
+@enduml

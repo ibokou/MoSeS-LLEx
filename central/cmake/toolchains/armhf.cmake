@@ -1,0 +1,9 @@
+set(ARM_TOOLCHAIN arm-linux-gnueabihf)
+
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
+
+set(CMAKE_FIND_ROOT_PATH "/usr/lib/arm-linux-gnueabihf")
+
+include(${CMAKE_CURRENT_LIST_DIR}/templates/arm.cmake)

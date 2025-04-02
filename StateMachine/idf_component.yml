@@ -1,0 +1,5 @@
+version: "1.0.0"
+description: A compact C++ finite state machine (FSM) implementation that's easy to use on embedded and PC-based systems.
+url: https://github.com/ibokou/StateMachine.git
+dependencies:
+  idf: ">=4.1"

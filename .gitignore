@@ -1,0 +1,11 @@
+twincrutches/impl/build/
+twininsoles/impl/build/
+.vscode/*
+__pycache__/*
+central/mynewt-nimble
+central/example/mynewt-nimble
+central/build/*
+central/example/build/*
+*.o
+central/*.tar.gz
+esp-idf-lib

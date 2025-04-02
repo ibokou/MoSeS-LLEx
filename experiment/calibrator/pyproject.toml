@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "calibrator"
+version = "0.1.0"
+description = ""
+authors = ["Ibrahima Kourouma <him.kourouma@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+calib = "calibrator:run"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+simplepyble = "^0.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
